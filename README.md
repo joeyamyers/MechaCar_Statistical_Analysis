@@ -11,7 +11,7 @@ In this challenge, you’ll help Jeremy and the data analytics team do the follo
 - Run t-tests to determine if the manufacturing lots are statistically different from the mean population
 - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For   each statistical analysis, you’ll write a summary interpretation of the findings.
 
-## Results
+## Analysis
 ### Predicting MPG
 I performed multiple linear regression analysis using vehicle length, vehicle weight, spoiler angle, ground clearance, and AWD as the right hand side variables to see if it had any effect on the outcome variable, mpg. My analysis will help to identify which variables, if any, in the dataset predict the mpg of MechaCar prototypes. The null hypothesis, in this case, is simply the slope of the linear model is zero or there is no correlation. The alternative hypothesis is that the slope is non-zero, and there is evidence that the correlation between Y and the X variables are not 0. 
 
@@ -40,5 +40,15 @@ Above are the summary statistics on the pounds per square inch (PSI) of the susp
 
 After grouping by each lot and calculating the summary statistics it is apparent that lot 3 does not meet the design specifications as its variation exceeds 100 PSI. Lot 3 must be investigated further to identify the issue.
 
-### T-Test
-####
+### T-Tests
+After computing the summary statistics in the last section, I will run t-tests to determine if each manufacturing lot's mean is statistically different from the population mean. 
+
+H0: each lot's mean is equal to the population mean
+Ha: each lot's mean is not equal to the population mean 
+
+significance level: 95%, alpha = .05
+
+#### Lot 1
+
+#### Lot 2
+#### Lot 3
