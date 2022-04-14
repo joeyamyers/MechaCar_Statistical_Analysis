@@ -24,3 +24,21 @@ The figures to pay attention to are the p-values of the independent varaibles de
 Another sigificant figure is the multiple R-squared value. This tells us how much of the variability around mpg can be explained. We know that 71.49% of the variability of mpg can be explained. The closer this number is to 1, the better the model is.
 
 The multiple linear regression model generated a p-value significantly less than the significance level at 95%. This tells us that this model is statistically significant and that we can reject the nulll hypothesis that there is no correlation between mpg and the right-hand-side variables.
+
+### PSI Summary Statistics
+I was tasked with collecting summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
+
+#### Total
+![](analysis/summary_table.png)
+
+Above are the summary statistics on the pounds per square inch (PSI) of the suspension coils from all three manufacturing lots. The mean is less than the median, which indicates a negatively skewed distribution. Variation does not exceed 100 pounds per square inch, so it appears that, in total, the current manufacturing data meets this design specification.
+
+#### Per Lot
+![](analysis/lot_summary.png)
+
+After grouping by each lot and calculating the summary statistics it is apparent that lot 3 does not meet the design specifications as its variation exceeds 100 PSI. Lot 3 must be investigated further to identify the issue.
+
+### T-Test
+####
