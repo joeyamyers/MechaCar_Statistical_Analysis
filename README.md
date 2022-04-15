@@ -49,16 +49,19 @@ Ha: each lot's mean is not equal to the population mean
 significance level: 95%, alpha = .05,
 population mean = 1,500 PSI
 
+#### Lot 2
+![](analysis/alllotsttest.png)
+The p-value generated from the t-test of the mean PSI of all lots was .06028. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the mean is equal to the population. This result suggests that there is not a significant statistical difference in PSI from the mean PSI and the population mean.
+
 #### Lot 1
 ![](analysis/lot1ttest.png)
-The p-value generated from the t-test was 1 indicating that the sample mean of lot 1 and the population mean are equal. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population.
+The p-value generated from the t-test was 1 indicating that the sample mean of lot 1 and the population mean are equal. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population. This result suggests that there is not a significant statistical difference in PSI from the mean PSI of lot 1 and the population mean.
 #### Lot 2
 ![](analysis/lot2ttest.png)
-The p-value generated from the t-test was .6072. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population.
+The p-value generated from the t-test was .6072. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population. This result suggests that there is not a significant statistical difference in PSI from the mean PSI of lot 2 and the population mean.
 #### Lot 3
 ![](analysis/lot3ttest.png)
 The p-value generated from the t-test was .04168. Because the p-value is less than alpha, we reject the null hypothesis that the lot's mean is equal to the population. This result suggests that there is a difference in PSI from the mean PSI of lot 3 and the population mean.
-
 
 
 ### Study Design: MechaCar vs Competition
