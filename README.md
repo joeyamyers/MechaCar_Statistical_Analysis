@@ -12,7 +12,7 @@ In this challenge, you’ll help Jeremy and the data analytics team do the follo
 - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For   each statistical analysis, you’ll write a summary interpretation of the findings.
 
 ## Analysis
-### Predicting MPG
+### Linear Regression to Predict MPG
 I performed multiple linear regression analysis using vehicle length, vehicle weight, spoiler angle, ground clearance, and AWD as the right hand side variables to see if it had any effect on the outcome variable, mpg. My analysis will help to identify which variables, if any, in the dataset predict the mpg of MechaCar prototypes. The null hypothesis, in this case, is simply the slope of the linear model is zero or there is no correlation. The alternative hypothesis is that the slope is non-zero, and there is evidence that the correlation between Y and the X variables are not 0. 
 
 ![](analysis/mpgLR.png)
@@ -25,7 +25,7 @@ Another sigificant figure is the multiple R-squared value. This tells us how muc
 
 The multiple linear regression model generated a p-value significantly less than the significance level at 95%. This tells us that this model is statistically significant and that we can reject the nulll hypothesis that there is no correlation between mpg and the right-hand-side variables.
 
-### PSI Summary Statistics
+### Summary Statistics on Suspension Coils
 I was tasked with collecting summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
@@ -40,15 +40,25 @@ Above are the summary statistics on the pounds per square inch (PSI) of the susp
 
 After grouping by each lot and calculating the summary statistics it is apparent that lot 3 does not meet the design specifications as its variation exceeds 100 PSI. Lot 3 must be investigated further to identify the issue.
 
-### T-Tests
+### T-Tests on Suspension Coils
 After computing the summary statistics in the last section, I will run t-tests to determine if each manufacturing lot's mean is statistically different from the population mean. 
 
 H0: each lot's mean is equal to the population mean
 Ha: each lot's mean is not equal to the population mean 
 
-significance level: 95%, alpha = .05
+significance level: 95%, alpha = .05,
+population mean = 1,500 PSI
 
 #### Lot 1
-
+![](analysis/lot1ttest.png)
+The p-value generated from the t-test was 1 indicating that the sample mean of lot 1 and the population mean are equal. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population.
 #### Lot 2
+![](analysis/lot2ttest.png)
+The p-value generated from the t-test was .6072. Because the p-value is greater than alpha, we fail to reject the null hypothesis that the lot's mean is equal to the population.
 #### Lot 3
+![](analysis/lot3ttest.png)
+The p-value generated from the t-test was .04168. Because the p-value is less than alpha, we reject the null hypothesis that the lot's mean is equal to the population. This result suggests that there is a difference in PSI from the mean PSI of lot 3 and the population mean.
+
+
+
+### Study Design: MechaCar vs Competition
