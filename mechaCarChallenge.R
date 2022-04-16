@@ -40,5 +40,3 @@ results2
 lot3 <- subset(suspensionCoil_df,Manufacturing_Lot == "Lot3") 
 results3 <- t.test(lot3$PSI, mu = 1500)
 results3
-
-# Deliverable 4 - Study Design: MechaCar vs Competition

@@ -65,3 +65,16 @@ The p-value generated from the t-test was .04168. Because the p-value is less th
 
 
 ### Study Design: MechaCar vs Competition
+
+In order to build consumer interest in the MechaCar, it is necessary to differentiate the MechaCar's metrics against other competition. When shopping for a new car, consumers look at metrics like cost, safety rating, and fuel efficiency. Because of rising gas prices, city fuel efficiency (MPG) will be highly sought after and will be the subject of this study.
+
+#### Study Design
+
+In order to compare the city MPG of the MechaCar to a competitor's city MPG, a paired t-test of both car's means must be computed. The null and alternative hypotheses are the following:
+
+Null Hypothesis: MechaCar city MPG is the same as a competitor's city MPG
+Alternative Hypothesis: MechaCar city MPG is greater than the competitor's city MPG
+
+Running a t-test would give us statistically significant evidence in distinguishing the differences in means of both cars. In this case, the hope is that the null hypothesis would be rejected, which suggests that there is evidence that there is a difference in means. This is a one-tailed t-test, so we are looking for the possibility of a relationship in just one direction of the distribution. I am testing whether the mean MPG of the MechaCar is significantly greater than the mean MPG of the competitor. The mean is significantly greater than the competitor's mean if the test statistic is in the top 5% of its probability distribution, resulting in a p-value less than alpha.
+
+To run this study, a sufficient amount of data of each car's city MPG would be need to be collected. According to the Central Limit Theorem, a sample size larger than 30 is sufficient enough to constitute normal distribution. 
