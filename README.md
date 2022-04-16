@@ -2,7 +2,9 @@
 
 ## Overview
 ### Purpose
-AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. In order to determine which factors effect fuel efficiency (MPG) the most, a multiple linear regression model is implemented. After running the regression, the production team will be able to predict MPG levels based off of the level of a few factors. Additionally, to identify possible issues with Suspension Coils, t-tests will be computed to determine if the mean PSI of the prototype is significantly greater or less than the population mean. 
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. Upper management has requested a review of the production data for insights that may help the manufacturing team.
+
+A multiple linear regression model was utilized to determine which factors affect fuel efficiency (MPG) the most. After running the regression, the production team will be able to predict MPG levels based off of the level of a few factors. To identify possible issues with Suspension Coils, t-tests were computed to determine if the mean PSI of the prototype is equal than the PSI of the population mean. 
 
 
 ## Analysis
